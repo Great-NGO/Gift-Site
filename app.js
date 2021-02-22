@@ -17,7 +17,7 @@ function showQuotes() {
     let randomNumber = Math.floor(Math.random() * dadsQuotes.length);
     display.innerHTML = dadsQuotes[randomNumber];
 
-    setTimeout(showQuotes, 5000);
+    setTimeout(showQuotes, 3500);
 }
 showQuotes();
 
@@ -25,7 +25,7 @@ function showBirthdayWishes() {
     const birthdayWishes = [
         ' "HAPPY BIRTHDAY DAD, I LOVE YOU SO MUCH. THANKS FOR BEING MY FATHER,COACH, MENTOR AND FRIEND. I PRAY GOD CONTINUES TO ELEVATE YOU" <br> - GREAT',
         ' "HAPPY BIRTHDAY CHAIRMAN, I LOVE YOU" <br> - ISAAC ',
-        ' "HAPPY" BIRTHDAY DADDY, A.K.A BEST DAD EVER. LOVE YOU WITH ALL MY HEART, LONG LIFE AND PROSPERITY. HOPE YOU HAVE A FANTABULOUS DAY" <br> - PRECIOUS',
+        ' "HAPPY BIRTHDAY DADDY, A.K.A BEST DAD EVER. LOVE YOU WITH ALL MY HEART, LONG LIFE AND PROSPERITY. HOPE YOU HAVE A FANTABULOUS DAY" <br> - PRECIOUS',
         ' "HAPPY BIRTHDAY DADDY, I WISH YOU LONG LIFE AND PROSPERITY, LOVE YOU!" <br> - PRINCESS',
         ' "HAPPY BIRTHDAY SIR, I WISH YOU MANY MORE YEARS. LOVE YOU" <br> - ELIZABETH ',
         ' "HAPPY BIRTHDAY TEMI, I LOVE YOU SO VERY MUCH " <br> - TEMI'
@@ -36,7 +36,7 @@ function showBirthdayWishes() {
     let randomNumber = Math.floor(Math.random() * birthdayWishes.length);
     wishes.innerHTML = birthdayWishes[randomNumber];
 
-    setTimeout(showBirthdayWishes, 5000);
+    setTimeout(showBirthdayWishes, 3500);
 
 }
 showBirthdayWishes();
@@ -79,20 +79,20 @@ function showSlides() {
     }
     slides[slideIndex - 1].style.display = "block";
 
-    setTimeout(showSlides, 5000); // Change image every  seconds
+    setTimeout(showSlides, 3500); // Change image every  seconds
 }
 
 var string = "Happy Birthday Dad !!! Have An Amazing Day ❤️"; /* type your text here */
 var array = string.split("");
 var timer;
 
-function frameLooper () {
-	if (array.length > 0) {
-		document.getElementById("text").innerHTML += array.shift();
-	} else {
-		clearTimeout(timer);
-			}
-	loopTimer = setTimeout('frameLooper()',70); /* change 70 for speed */
+function frameLooper() {
+    if (array.length > 0) {
+        document.getElementById("text").innerHTML += array.shift();
+    } else {
+        clearTimeout(timer);
+    }
+    loopTimer = setTimeout('frameLooper()', 70); /* change 70 for speed */
 
 }
 frameLooper();
